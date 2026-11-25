@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirigiendo Folio 0593668...</title>
+  <script>
+    // Texto exacto codificado en el QR de la calcomanía
+    const textoFolio = "Folio: 0593668 , CALCOMANIA PARA LOS VEHICULOS DOBLEMENTE ARTICULADOS";
+    
+    // URL de destino con el parámetro codificado
+    const destino = "https://www.google.com/search?q=" + encodeURIComponent(textoFolio);
+
+    // Redirección automática al cargar
+    window.location.replace(destino);
+  </script>
+</head>
+<body>
+  <p>Redirigiendo al navegador con el <strong>Folio: 0593668</strong>...</p>
+  <p>Si no abre automáticamente, <a id="enlace-manual" href="#">haz clic aquí</a>.</p>
+
+  <script>
+    // Respaldo manual por si el navegador bloquea la redirección automática
+    document.getElementById("enlace-manual").href = destino;
+  </script>
+</body>
+</html>
